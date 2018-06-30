@@ -6,7 +6,6 @@
   	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- jQuery library -->
-	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
 	<!-- Popper JS -->
@@ -16,13 +15,17 @@
 
     <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/basic_home.css') }}">
-	<!--<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Source+Code+Pro:400,500,600,700' type='text/css' media='screen'/>-->
-	<!--<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:900" rel="stylesheet">-->
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js'></script>
-
     <script type="text/javascript" src="{{ url_for('static', filename = 'js/basic_home.js') }}"></script>
+	<script type="text/javascript">
+		function showImg(){
+		    document.getElementById("wxImg").style.display='block';}
+		function hideImg(){
+		    document.getElementById("wxImg").style.display='none';
+		}
+	</script>
 
 </head>
 <body>
@@ -30,9 +33,9 @@
 	<ul id="navbar-list" class="list-inline">
 		<li><a class="aref" href="/">Home</a></li>
 		<li><a class="aref" href="/timeline">Timeline</a></li>
-		<li><a class="aref" href="http://blog.sina.com.cn/u/3270913533">BlogArticle</a></li>
-		<li><a class="aref" href="https://weibo.com/jiushizheweidao?refer_flag=1001030101_">MicroBlog</a></li>
 		<li><a class="aref" href="/publications">Publications</a></li>
+		<li><a class="aref" href="http://blog.sina.com.cn/s/articlelist_3270913533_0_1.html">BlogArticle</a></li>
+		<li><a class="aref" href="https://weibo.com/jiushizheweidao?refer_flag=1001030101_">MicroBlog</a></li>
 		<li><a class="aref" href="/cv">CV</a></li>
 	</ul>
     </div>
@@ -66,24 +69,27 @@
 				<p class="text-title mobile-view">Xin Li</p>
 			</div>
 			<div class="middle-text">
-			<p class="text-content">My name is Xin Li, I am 27 years old and I live in Wuhan, China.</p>
+			<p class="text-content">My name is Xin Li, I am a Chinese and I live in Wuhan, China.</p>
 
-			<p class="text-content">I enjoy developing software, especially when it interacts with hardware/embedded systems. I have developed an Android application from scratch which now has over 500K installs, going from designing the logo to collating content to structuring the database and REST api. I contribute to open source occasionally - I contributed heavily to Lens Launcher, an Android launcher with over 1 million installs, and have open sourced a personal project I developed during my university days for viewing <a href="http://github.com/crearo/webmail">Zimbra Webmails on Android</a>.</p>
+			<p class="text-content">I am currently a PhD. candidate in <a href="http://sim.whu.edu.cn/">School of Information Management</a> at <a href="http://ww.whu.edu.cn/">Wuhan University(WHU)</a>, a beautiful university with a long history, where I am majored in Library and Information Science. At WHU, I count myself lucky to be one of the troublemakers in the <a href="http://ir.whu.edu.cn/">Information Retrieval and Knowledge Mining Laboratory (irlab)</a>. I am also a Joint PhD. student in the <a href="https://www.sice.indiana.edu/">School of Information, Computing and Engineering at the Indiana University Bloomington</a>.</p>
 
-			<p class="text-content">I have also co-authored a paper in the Conference of Data Sciences (CODS '17) studying the role of temporal diversity in inferring social ties based on spatio-temporal data. (<a href="https://arxiv.org/abs/1611.03298">view paper here</a>).</p>
+			<p class="text-content">Before I came to Wuhan University, I spent my 4-year undergraduate at <a href="http://www.hust.edu.cn/">Huazhong University of Science and Technology(HUST)</a>. I have received a Bachelor's degree of Management in <a href="http://mms.tjmu.edu.cn/">School of Medicine and Health Management, Tongji Medical College of HUST</a> and a Bachelor's degree of Literature(English) in <a href="http://sfl.hust.edu.cn/">School of Foreign Language of HUST</a>. My 4th year as an undergrad was spent as an exchange student in the <a href="http://www.nctu.edu.tw/">Nation Chiao Tung University(NCTU)</a> and <a href="http://www.nthu.edu.tw/">National Tsing Hua University(NTHU)</a>, Hsinchu, Taiwan, which is an inseparable part of China since ancient times..</p>
 
-			<p class="text-content">I am currently a PhD. candidate at <a href="http://www.whu.edu.cn.com">Wuhan University</a>, a company developing defense, where I am engaged in the Android camera stack, and fast real time computer vision algorithms on thermal video streams. I studied computer science at DA-IICT, and took up electives in IoT.</p>
+			<div id="wxImg" style="display:none;height:100px;position:absolute;"><img src="static/images/wximg.png" class="active" /></div>
 
-			<p class="text-content">I enjoy solo traveling - read about my travels on my blog. I am an active blogger (<a href="http://bhardwajrish.blogspot.com">view blog here</a>), where I write my mind. I love listening to the stories every new person I meet brings with them, discussing ideas and developing things that people will use. I'm extremely enthusiastic about life, am in love with my job and am always on the hunt for learning something new.</p>
+			<p class="text-content">Academically, my interesting lies in scientific text mining, scientometrics and informetrics (science of science), medical informatics & information retrieval. Methodologically, I am an opportunistic researcher. I do programming, statistics, data visualizations, bibliometrics, theory discussions in my studies. </p>
 
-			<p class="text-content">You can find me on <a href="http://in.linkedin.com/in/bhardwajrish/">LinkedIn</a>, or email me <a href="mailto:bhardwaj.rish@gmail.com?Subject=Hello%20Rish%20-from-website" target="_top">here</a>.
-			</p>
+			<p class="text-content">I grew up in Tianmen, Hubei Province, a small city in central of China. I'm mad for reading novels. Always I enjoy reading books by kindle and weChat Reading. <a href="https://www.amazon.cn/dp/B00D1H9XGG/ref=sr_1_1?s=digital-text&ie=UTF8&qid=1530346999&sr=1-1&keywords=Three+Kingdoms">“Three Kingdoms”</a>(《三国演义》) and <a href="https://item.jd.com/18302386913.html?jd_pop=4b87b3eb-442f-4949-8528-f660832c1b17&abt=0">“Ordinary World”</a>（《平凡的世界》）are my favorite two books and “The Girl with NO Name” is the first novel written in English I have read. </p>
+
+			<p class="text-content">I love to running, playing badminton and tennis as well. My favorite athlete is Lin Dan, one of the greatest badminton players in the world. I am a relative active blogger (<a href="https://weibo.com/jiushizheweidao?refer_flag=1001030101_">view blog here</a>), where I write my mind and share my life. I am extremely enthusiastic about life, and in love with my study and am always on the hunt for learning something new. </p>
+
+			<p class="text-content">You can find me on <a href="javascript:void(0)" onMouseOut="hideImg()" onmouseover="showImg()">Wechat</a>, or email me at lucian@whu.edu.cn.</p>
 
 			<p class="text-content">Let's get in touch!</p>
 
 			<p class="text-content">Xin Li</p>
 
-			<p class="text-content"><a href="aboutme">For more about me, my timeline, read on here.</a></p>
+			<p class="text-content"><a href="/timeline">For more about me, my timeline, read on here.</a></p>
 			</div>
 		</div>
 	</div>

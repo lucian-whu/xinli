@@ -12,6 +12,11 @@ def index():
 def aboutme():
 	return render_template('timeline.html', resume_pdf_link=resume_pdf_link)
 
+@app.route('/publications')
+def articles():
+    return render_template('pub.html', resume_pdf_link=resume_pdf_link)
+
+
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template('404.html'), 404
