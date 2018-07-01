@@ -5,7 +5,7 @@ $(function() {
       "><span class='caret'>$</span> focus: text mining, informetrics, medical informatics, NLP.<br/> ^100" +
       "><span class='caret'>$</span> programming: Python, java, R<br/> ^300" +
       "><span class='caret'>$</span> alias: lucian, 爱吃花生的小松鼠 <br/>" +
-      "><span class='caret'>$</span> tool: numpy, pandas, matplotlib, mxnet, lucene, NLTK.<br/>" +
+      "><span class='caret'>$</span> skills: numpy, pandas, matplotlib, mxnet, lucene, NLTK.<br/>" +
       "><span class='caret'>$</span> organization: PhD.student @<a href='http://www.whu.edu.cn/'>Wuhan University</a><br/> ^100" +
       "><span class='caret'>$</span> <a href='/timeline'>timeline</a> <a href='https://github.com/lucian-whu'>github</a> <a href='https://www.linkedin.com/in/xin-li-89a82111a/''>linkedin</a><br/>"
     ],
