@@ -110,6 +110,15 @@ ul li a {
   border-top-right-radius: 8px;
   padding: 1px 8px;
 }
+#terminal .terminal .window-title {
+  background: linear-gradient(top, #dedede, #c0c0c0);
+  width: calc(100% - 16px);
+  height: 8%;
+  text-align: center;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  padding: 1px 8px;
+}
 #terminal .terminal .window-title .win-buttons {
   position: relative;
   width: 15%;
