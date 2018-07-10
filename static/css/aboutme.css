@@ -49,6 +49,10 @@ li{
 	text-decoration: none;
 }
 
+a{
+	color:#ac4142;
+}
+
 .button {
 	display: inline-block;
 	position: relative;
@@ -73,3 +77,4 @@ li{
 	vertical-align: middle;
 	zoom: 1;
 }
+
