@@ -55,12 +55,12 @@ a.color1:link{
 }
 
 a.color1:visited{
-	color: #FFFFFF;
+	color: #ac4142;
 	text-decoration:none;
 }
 
 a.color1:hover {
-	color: #FFFFFF; 
+	color: #ac4142;
 	text-decoration:underline;
 }
 
