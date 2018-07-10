@@ -49,9 +49,9 @@ li{
 	text-decoration: none;
 }
 
-a{
-	color:#ac4142;
-}
+a.color1:link{
+	color: #ac4142 ;
+	text-decoration:none;} /*常规时候的样式*/
 
 .button {
 	display: inline-block;
