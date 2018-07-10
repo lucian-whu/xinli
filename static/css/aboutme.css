@@ -51,7 +51,18 @@ li{
 
 a.color1:link{
 	color: #ac4142 ;
-	text-decoration:none;} /*常规时候的样式*/
+	text-decoration:none;
+}
+
+a.color1:visited{
+	color: #FFFFFF;
+	text-decoration:none;
+}
+
+a.color1:hover {
+	color: #FFFFFF; 
+	text-decoration:underline;
+}
 
 .button {
 	display: inline-block;
