@@ -6,12 +6,21 @@ from fabric.api import *
 
 env.hosts = ['119.23.27.37']
 env.user = 'root'
-env.password = 'Huaketj@151020'
+env.password = raw_input("please enter your password: ")
 def hello():
     print('hello world!')
 
-def deploy():
+def deployxinli():
     with cd('/root/xinli'):
         run('git pull')
         sudo('supervisorctl restart xinli')
         sudo('supervisorctl status')
+
+def deployspace():
+    with cd('/root/myspace'):
+        run('git pull')
+        sudo('supervisorctl restart space')
+        sudo('supervisorctl status')
+
+
+
